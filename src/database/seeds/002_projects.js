@@ -1,3 +1,4 @@
+
 exports.seed = function(knex) {
   // Deletes ALL existing entries
   return knex('projects').del()
@@ -5,8 +6,8 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('projects').insert([
         {
-          user_id: 25,
-          title: "projeto novo"
+          user_id: 1,
+          title: "Meu projeto"
         }
       ]);
     });
